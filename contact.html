@@ -12,10 +12,10 @@
       <h1><a href="index.html">MVU</a></h1>
       <nav>
         <ul class="flex flex-row">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="index.html#education">Education</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -23,7 +23,29 @@
     </header>
 
     <main class="flex flex-column">
-      
+      <section class="flex align-center contactform flex-column">
+        <h1>Contact Form</h1>
+        <form class="flex flex-column">
+          <div>
+            <p>Name *</p>
+            <input type="text" required placeholder="Name *" id="name">
+          </div>
+          <div>
+            <p>E-Mail *</p>
+            <input type="email" required placeholder="E-Mail *" id="mail">
+          </div>
+          <div>
+            <p>Phone Number</p>
+            <input type="tel" placeholder="Phone Number" id="number">
+          </div>
+          <div>
+            <p>Message</p>
+            <textarea placeholder="Message" id="message"></textarea>
+          </div>
+
+          <button>Submit</button>
+        </form>
+      </section>
     </main>
 
     <footer class="flex flex-row justify-around align-center">

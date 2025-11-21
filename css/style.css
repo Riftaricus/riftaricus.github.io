@@ -147,6 +147,7 @@ main {
   transform: scale(0.98);
 }
 
+
 .mainbox {
   margin-top: 200px;
   padding: 100px 40px 100px 40px;
@@ -314,4 +315,51 @@ main {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #b6b6b6;
+}
+
+.contactform{
+  margin-top: 200px;
+  width: 50%;
+  border-radius: 45px;
+  margin: auto;
+  height: 800px;
+  background-color: #D9D9D9;
+  gap: 40px;
+
+}
+
+.contactform form{
+  gap: 60px;
+}
+
+
+.contactform h1{
+  font-size: 100px;
+}
+
+.contactform p{
+  font-size: xx-large;
+}
+
+.contactform input, textarea, button{
+  outline: solid #000000 0.5px;
+  width: 600px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  transition-duration: 0.1s;
+}
+
+.contactform button:hover {
+  scale: 1.1;
+}
+.contactform button:active {
+  scale: 1;
+}
+
+.contactform textarea {
+  max-width: 600px;
+  min-width: 600px;
+  max-height: 240px;
+  min-height: 60px;
 }

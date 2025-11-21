@@ -65,3 +65,4 @@ function glitch404(){
         console.warn("Element with id 'glitchy' not found in the DOM.")
     }
 }
+
