@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log("Starting loops")
 
-    window.setInterval(glitch404, 100)
+    if (document.getElementById('glitchy')){
+        window.setInterval(glitch404, 100)
+    }
+
 });
 
 function initializePage(){
@@ -37,6 +40,13 @@ function initializePage(){
 function glitch404(){
     const el = document.getElementById("glitchy")
 
+    if (el) {
+        el.innerHTML = error + " " + errorCode
+    }else{
+        console.warn("Element with id 'glitchy' not found in the DOM.")
+        return
+    }
+
     let randomNumber = Math.floor(Math.random() * 10) + 1
 
     let errorCode = "404"
@@ -44,6 +54,8 @@ function glitch404(){
     let error = "Error"
 
     let style = el.style
+    
+
 
     if (randomNumber >= 2){
         errorCode = "404"
@@ -59,10 +71,4 @@ function glitch404(){
 
 
     }
-    if (el) {
-        el.innerHTML = error + " " + errorCode
-    }else{
-        console.warn("Element with id 'glitchy' not found in the DOM.")
-    }
 }
-
