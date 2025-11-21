@@ -5,6 +5,8 @@ header {
   background-color: rgba(217, 217, 217, 0.25);
   outline: solid #062d6162;
   color: white;
+  position: fixed;
+  z-index: 1000;
 }
 
 header h1 {
@@ -57,6 +59,10 @@ body {
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .justify-center {
@@ -142,6 +148,7 @@ main {
 }
 
 .mainbox {
+  margin-top: 200px;
   padding: 100px 40px 100px 40px;
   height: 600px;
   width: auto;
@@ -213,7 +220,6 @@ main {
 
 .aboutbackgroundbox img:hover{
   scale: 1.1;
-  filter: grayscale(0.2);
 }
 
 .about-certificates{
@@ -292,4 +298,20 @@ main {
 
 .projectsbox img{
   width: 100%;
+}
+
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b6b6b6;
 }
