@@ -411,7 +411,7 @@ main {
   }
 
   .projectsbox .flex-row > div {
-    flex: 0 0 calc(25% - 20px);
+    flex: 0 0 calc(25% - 15px);
   }
 
   footer {
@@ -438,11 +438,6 @@ main {
   .contactform button {
     width: 90%;
     max-width: 500px;
-  }
-
-  .contactform textarea {
-    max-width: 90%;
-    min-width: 90%;
   }
 }
 
@@ -540,7 +535,7 @@ main {
   }
 
   .projectsbox .flex-row > div {
-    flex: 0 0 calc(50% - 15px);
+    flex: 0 0 calc(50% - 7.5px);
   }
 
   .projectsbox img {
@@ -583,7 +578,7 @@ main {
   }
 
   .contactform p {
-    font-size: large;
+    font-size: 20px;
   }
 
   .contactform form {
@@ -595,11 +590,6 @@ main {
   .contactform button {
     width: 95%;
     max-width: none;
-  }
-
-  .contactform textarea {
-    max-width: 95%;
-    min-width: 95%;
   }
 }
 
