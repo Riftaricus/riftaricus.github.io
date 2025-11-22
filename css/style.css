@@ -340,3 +340,302 @@ main {
   max-height: 240px;
   min-height: 60px;
 }
+
+/* Responsive Design - Tablet */
+@media screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 40px;
+  }
+
+  nav ul li a {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  .mainbox {
+    margin-top: 150px;
+    padding: 60px 30px;
+    height: auto;
+    width: 85%;
+  }
+
+  .mainbox h1 {
+    font-size: 70px;
+  }
+
+  .mainbox h2 {
+    font-size: 40px;
+  }
+
+  .backgroundimage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutbackgroundbox,
+  .educationbackgroundbox,
+  .projectsbackgroundbox {
+    width: 85%;
+    padding: 60px 30px;
+  }
+
+  .aboutbackgroundbox {
+    height: auto;
+  }
+
+  .about-text {
+    font-size: 35px;
+  }
+
+  .aboutbox {
+    padding: 60px 30px;
+    width: 85%;
+    height: auto;
+  }
+
+  .educationbackgroundbox {
+    height: auto;
+  }
+
+  .projectsbackgroundbox {
+    height: auto;
+  }
+
+  .projectsbox {
+    padding: 60px 30px;
+  }
+
+  .projectsbox .flex-row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .projectsbox .flex-row > div {
+    flex: 0 0 calc(25% - 20px);
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  footer div {
+    width: 45%;
+    margin: 10px 0;
+  }
+
+  .contactform {
+    width: 70%;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .contactform h1 {
+    font-size: 70px;
+  }
+
+  .contactform input,
+  .contactform textarea,
+  .contactform button {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .contactform textarea {
+    max-width: 90%;
+    min-width: 90%;
+  }
+}
+
+/* Responsive Design - Mobile */
+@media screen and (max-width: 768px) {
+  header {
+    height: 80px;
+    flex-direction: column;
+    padding: 10px 5%;
+    justify-content: center;
+  }
+
+  header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    margin: 0 8px;
+  }
+
+  main {
+    gap: 300px;
+  }
+
+  .mainbox {
+    margin-top: 120px;
+    padding: 40px 20px;
+    width: 90%;
+    border-radius: 40px;
+  }
+
+  .mainbox h1 {
+    font-size: 40px;
+  }
+
+  .mainbox h2 {
+    font-size: 24px;
+  }
+
+  .backgroundimage {
+    border-radius: 40px;
+  }
+
+  .aboutbackgroundbox,
+  .educationbackgroundbox,
+  .projectsbackgroundbox {
+    width: 90%;
+    padding: 40px 20px;
+    border-radius: 40px;
+  }
+
+  .about-text {
+    font-size: 24px;
+  }
+
+  .aboutbox {
+    padding: 40px 20px;
+    width: 90%;
+    border-radius: 40px;
+  }
+
+  .aboutbackgroundbox img {
+    width: 200px;
+    border-radius: 40px;
+  }
+
+  .educationbox {
+    padding: 40px 20px;
+    width: 90%;
+    border-radius: 40px;
+  }
+
+  .educationbox img {
+    width: 100%;
+  }
+
+  .projectsbox {
+    padding: 40px 20px;
+    width: 90%;
+    border-radius: 40px;
+  }
+
+  .projectsbox .flex-row {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .projectsbox .flex-row > div {
+    flex: 0 0 calc(50% - 15px);
+  }
+
+  .projectsbox img {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  footer div {
+    width: 80%;
+    height: auto;
+    padding: 20px 5%;
+  }
+
+  footer div h1 {
+    font-size: 24px;
+  }
+
+  footer div p {
+    font-size: 16px;
+  }
+
+  .button {
+    margin-top: 20px;
+  }
+
+  .contactform {
+    width: 90%;
+    margin-top: 120px;
+    padding: 30px 15px;
+    border-radius: 30px;
+  }
+
+  .contactform h1 {
+    font-size: 50px;
+  }
+
+  .contactform p {
+    font-size: large;
+  }
+
+  .contactform form {
+    gap: 30px;
+  }
+
+  .contactform input,
+  .contactform textarea,
+  .contactform button {
+    width: 95%;
+    max-width: none;
+  }
+
+  .contactform textarea {
+    max-width: 95%;
+    min-width: 95%;
+  }
+}
+
+/* Extra small mobile devices */
+@media screen and (max-width: 480px) {
+  header {
+    height: auto;
+    padding: 10px 3%;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  .mainbox h1 {
+    font-size: 32px;
+  }
+
+  .mainbox h2 {
+    font-size: 20px;
+  }
+
+  .about-text {
+    font-size: 20px;
+  }
+
+  .projectsbox .flex-row > div {
+    flex: 0 0 100%;
+  }
+
+  .contactform h1 {
+    font-size: 40px;
+  }
+}
