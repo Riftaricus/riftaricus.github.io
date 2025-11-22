@@ -7,11 +7,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log("Starting loops")
 
-    if (document.getElementById('glitchy')){
-        window.setInterval(glitch404, 100)
-    }
+    window.setInterval(runLoops, 100)
 
 });
+
+function runLoops() {
+    checkIfOnPhone()
+    if (document.getElementById('glitchy')){
+        glitch404()
+    }
+}
+function checkIfOnPhone() {
+
+    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+    if (isMobile || window.innerWidth < 1024) {
+        if (window.location.pathname.endsWith("blockedpage.html")) {
+            return;
+        }
+
+        window.location.href = "blockedpage.html";
+        console.log("Blocked phone enter, please use a computer to view this website");
+    } else {
+        if (window.location.pathname.endsWith("blockedpage.html")) {
+            window.location.href = "index.html";
+        }
+    }
+
+}
 
 function initializePage(){
 
@@ -20,11 +42,17 @@ function initializePage(){
     var emailE = 'student.roc-nijmegen.nl'
     var emailE = ('1216770' + "@" + emailE)
 
-    let emailHTML = document.getElementById('contactemail')
+    let emailHTML = "null"
 
-    emailHTML.innerHTML = ('<a href="mailto:' + emailE + '">' + emailE + '</a>')
+    emailHTML = document.getElementById('contactemail')
 
-    console.log("Succesfully encrypted email against bots")
+    if (emailHTML == "null"){
+
+        emailHTML.innerHTML = ('<a href="mailto:' + emailE + '">' + emailE + '</a>')
+
+        console.log("Succesfully encrypted email against bots")
+
+    }
 
     console.log("Generating age...")
     let ageCounter = 0
