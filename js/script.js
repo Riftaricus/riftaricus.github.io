@@ -15,10 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function initializePage(){
 
+    console.log("Encrypting email against bots")
+
+    var emailE = 'student.roc-nijmegen.nl'
+    var emailE = ('1216770' + "@" + emailE)
+
+    let emailHTML = document.getElementById('contactemail')
+
+    emailHTML = ('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+
+    console.log("Succesfully encrypted email against bots")
+
     console.log("Generating age...")
     let ageCounter = 0
 
-    const d = new Date("2009-05-19")
+    const d = new Date("2009-05")
 
     var seconds = Math.floor((new Date() - d) / 1000)
 
@@ -40,9 +51,7 @@ function initializePage(){
 function glitch404(){
     const el = document.getElementById("glitchy")
 
-    if (el) {
-        el.innerHTML = error + " " + errorCode
-    }else{
+    if (!el){
         console.warn("Element with id 'glitchy' not found in the DOM.")
         return
     }
@@ -61,13 +70,14 @@ function glitch404(){
         errorCode = "404"
         style.color = "black"
         style.textShadow = ""
+        el.innerHTML = error + " " + errorCode
     } else if (randomNumber < 2){
 
         errorCode = "" + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10)
 
         style.color = "#86C232"
         style.textShadow = "-1px -1px 0 #347750ff, 1px -1px 0 #347750ff, -1px 1px 0 #347750ff, 1px 1px 0 #347750ff"
-
+        el.innerHTML = error + " " + errorCode
 
 
     }
