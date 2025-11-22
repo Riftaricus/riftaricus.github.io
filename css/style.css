@@ -10,7 +10,8 @@ header {
 }
 
 header h1 {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   font-size: 50px;
   color: white;
   text-transform: uppercase;
@@ -31,7 +32,8 @@ nav ul li a {
   color: white;
   margin: 0 15px;
   font-size: 30px;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000, 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
   transition-duration: 0.1s;
 }
@@ -61,13 +63,27 @@ body {
 }
 
 /* Layout utilities */
-.justify-center { justify-content: center; }
-.justify-around { justify-content: space-around; }
-.justify-between { justify-content: space-between; }
-.align-center { align-items: center; }
-.flex { display: flex; }
-.flex-row { flex-direction: row; }
-.flex-column { flex-direction: column; }
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
 
 @font-face {
   font-family: "Jersey10-Regular";
@@ -79,7 +95,7 @@ footer {
 }
 
 footer div {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
   outline: 2px solid #000000;
   width: 30%;
   height: 160px;
@@ -87,12 +103,13 @@ footer div {
 }
 
 .infopurple {
-  color: #3F3477;
+  color: #3f3477;
 }
 
 footer div h1 {
-  color: #D7EBE7;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #d7ebe7;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 main {
@@ -105,21 +122,21 @@ main {
   height: 25px;
   border-radius: 6px;
   outline: solid #999999;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #000000;
-  -webkit-text-stroke: 1px #3F3477;
+  -webkit-text-stroke: 1px #3f3477;
   font-size: larger;
   text-decoration: none;
 }
 
 .button:hover {
-  background-color: #BFBFBF;
+  background-color: #bfbfbf;
   cursor: pointer;
   transform: scale(1.02);
 }
 
 .button:active {
-  background-color: #A6A6A6;
+  background-color: #a6a6a6;
   transform: scale(0.98);
 }
 
@@ -128,7 +145,7 @@ main {
   padding: 100px 40px;
   height: 600px;
   width: auto;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border-radius: 70px;
   outline: solid #999999;
   gap: 20px;
@@ -239,7 +256,7 @@ main {
 
 .projectsbackgroundbox {
   padding: 100px 40px;
-  height: 1200px;
+  height: fit-content + 200;
   width: 90%;
   background-color: #d9d9d946;
   border-radius: 70px;
@@ -267,6 +284,9 @@ main {
 
 .projectsbox img {
   width: 100%;
+}
+
+.projectsbox div div {
   transition-duration: 0.1s;
 }
 
@@ -292,12 +312,11 @@ main {
 }
 
 .contactform {
-  margin-top: 200px;
+  margin: 0px auto 200px auto;
   width: 50%;
   border-radius: 45px;
-  margin: auto;
   height: 800px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   gap: 40px;
 }
 
@@ -345,12 +364,60 @@ main {
 
   width: 100%;
   height: 100%;
-  
+
   background-color: rgb(70, 70, 70);
 }
 
-.nophonebox h1{
+.nophonebox h1 {
   font-size: 5vw;
 }
 
+.pointer {
+  cursor: pointer;
+}
 
+.projectsinfo {
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  height: fit-content + 300px;
+  border-radius: 45px;
+  outline: solid #999999;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.reverse {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.contactbox{
+  margin: 200px auto -200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(135, 135, 135);
+  padding: 10px;
+  border-radius: 45px;
+  outline: solid black;
+}
+
+.contactbox img{
+  scale: 0.5;
+  transition-duration: 0.1s;
+}
+
+.contactbox:hover{
+  scale: 1.01;
+}
+
+.contactbox:active{
+  scale: 0.98;
+}
+
+.contactbox form{
+  font-size: 100px;
+}
+
+.gap {
+  gap: 50px;
+}

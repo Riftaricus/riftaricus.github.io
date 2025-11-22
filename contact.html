@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Morris van Uden</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -24,20 +24,26 @@
     </header>
 
     <main class="flex flex-column">
+      <section class="flex flex-row justify-center gap">
+        <a href="https://github.com/Riftaricus"
+          ><div class="flex align-center flex-row contactbox justify-center">
+            <img src="assets/img/github-mark-white.png" /></div
+        ></a>
+      </section>
       <section class="flex align-center contactform flex-column" id="contact">
         <h1>Contact Form</h1>
         <form class="flex flex-column">
           <div>
             <p>Name *</p>
-            <input type="text" required placeholder="Name *" id="name">
+            <input type="text" required placeholder="Name *" id="name" />
           </div>
           <div>
             <p>E-Mail *</p>
-            <input type="email" required placeholder="E-Mail *" id="mail">
+            <input type="email" required placeholder="E-Mail *" id="mail" />
           </div>
           <div>
             <p>Phone Number</p>
-            <input type="tel" placeholder="Phone Number" id="number">
+            <input type="tel" placeholder="Phone Number" id="number" />
           </div>
           <div>
             <p>Message</p>
@@ -54,22 +60,31 @@
         <h1>Credits</h1>
         <p>Designer: <span class="infopurple">Morris van Uden</span></p>
         <p>Developer: <span class="infopurple">Morris van Uden</span></p>
-        <p>Front end developer: <span class="infopurple">Morris van Uden</span></p>
-        <p>Back end developer: <span class="infopurple">Morris van Uden</span></p>
+        <p>
+          Front end developer: <span class="infopurple">Morris van Uden</span>
+        </p>
+        <p>
+          Back end developer: <span class="infopurple">Morris van Uden</span>
+        </p>
         <p>School: <span class="infopurple">Technovium Nijmegen</span></p>
         <p>Country: <span class="infopurple">Netherlands</span></p>
       </div>
 
       <div class="flex align-center flex-column">
         <h1>Contact</h1>
-        <p>Email: <a class="infopurple" id="contactemail"></a></p>
+        <p>
+          Email:
+          <a class="infopurple reverse">ln.negemjin-cor.tneduts@0776121</a>
+        </p>
         <p>Phone Number: <span class="infopurple">PLACEHOLDER</span></p>
-        <a class="button flex justify-center align-center" href="#contact">Contact Form</a>
+        <a class="button flex justify-center align-center" href="#contact"
+          >Contact Form</a
+        >
       </div>
 
       <div>
         <h1>Resume</h1>
-        <a href="assets/resume/RESUME.pdf" target="_blank" >Open resume here</a>
+        <a href="assets/resume/RESUME.pdf" target="_blank">Open resume here</a>
       </div>
     </footer>
   </body>

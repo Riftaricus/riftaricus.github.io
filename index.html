@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Morris van Uden</title>
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
   </head>
@@ -24,69 +24,131 @@
     </header>
 
     <main class="flex flex-column">
-
       <section class="flex flex-column align-center mainbox" id="home">
-        <img src="assets/img/background.jpg" class="backgroundimage" alt="a background image of clouds">
+        <img
+          src="assets/img/background.jpg"
+          class="backgroundimage"
+          alt="a background image of clouds"
+        />
         <h1>Morris van Uden</h1>
         <h1>"<span id="glitchy">Error 404</span>: Sanity Not Found."</h1>
-        <h2>Creating <span class="infopurple">software</span> for <span class="infopurple">fun</span></h2>
+        <h2>
+          Creating <span class="infopurple">software</span> for
+          <span class="infopurple">fun</span>
+        </h2>
       </section>
 
-      <section class="flex align-center aboutbackgroundbox flex-column" id="about">
+      <section
+        class="flex align-center aboutbackgroundbox flex-column"
+        id="about"
+      >
         <h1>About</h1>
         <h1>Morris van Uden</h1>
-        <img src="assets/img/personalImage.png" alt="A picture of the developer of the website">
+        <img
+          src="assets/img/personalImage.png"
+          alt="A picture of the developer of the website"
+        />
         <div class="flex aboutbox align-center justify-center flex-column">
           <div class="about-text">
-            <p>Hello, I’m <span class="infopurple">Morris van Uden</span>. I’m <span class="infopurple"><span id="age"></span> years old</span> and study at <span class="infopurple">ROC Technovium Nijmegen</span>.</p>
-
-            <p>I focus on <span class="infopurple">backend development</span> and enjoy creating software for learning and fun. I started with <span class="infopurple">Scratch</span>, built and programmed Lego robots in the robotics class, and progressed to real languages at ROC.</p>
-
-            <p class="skills"><strong>Skills:</strong>
-              <span class="infopurple">Java</span>, <span class="infopurple">Python</span>, <span class="infopurple">HTML</span>, <span class="infopurple">CSS</span>, <span class="infopurple">JavaScript</span>
+            <p>
+              Hello, I’m <span class="infopurple">Morris van Uden</span>. I’m
+              <span class="infopurple"><span id="age"></span> years old</span>
+              and study at
+              <span class="infopurple">ROC Technovium Nijmegen</span>.
             </p>
 
-            <p class="interests"><strong>Interests:</strong> <span class="infopurple">AI</span>, <span class="infopurple">robotics</span>, <span class="infopurple">game development</span>, <span class="infopurple">open source</span></p>
+            <p>
+              I focus on <span class="infopurple">backend development</span> and
+              enjoy creating software for learning and fun. I started with
+              <span class="infopurple">Scratch</span>, built and programmed Lego
+              robots in the robotics class, and progressed to real languages at
+              ROC.
+            </p>
+
+            <p class="skills">
+              <strong>Skills:</strong> <span class="infopurple">Java</span>,
+              <span class="infopurple">Python</span>,
+              <span class="infopurple">HTML</span>,
+              <span class="infopurple">CSS</span>,
+              <span class="infopurple">JavaScript</span>
+            </p>
+
+            <p class="interests">
+              <strong>Interests:</strong> <span class="infopurple">AI</span>,
+              <span class="infopurple">robotics</span>,
+              <span class="infopurple">game development</span>,
+              <span class="infopurple">open source</span>
+            </p>
           </div>
           <div class="about-certificates flex align-center flex-column">
             <h1>Certificates</h1>
-            <div class="flex flex-row align-center justify-around">
-            </div>
-
+            <div class="flex flex-row align-center justify-around"></div>
           </div>
         </div>
       </section>
 
-      <section class="educationbackgroundbox flex align-center flex-column" id="education">
+      <section
+        class="educationbackgroundbox flex align-center flex-column"
+        id="education"
+      >
         <h1>Education</h1>
         <div class="educationbox flex align-center justify-center">
-          <img src="assets/img/timeline.png" alt="a timeline of the developer's education">
+          <img
+            src="assets/img/timeline.png"
+            alt="a timeline of the developer's education"
+          />
         </div>
       </section>
-      <section class="projectsbackgroundbox flex align-center flex-column" id="projects">
+      <section
+        class="projectsbackgroundbox flex align-center flex-column"
+        id="projects"
+      >
         <h1>Projects</h1>
         <div class="projectsbox flex align-center justify-center flex-column">
           <div class="flex flex-row">
             <div class="flex justify-center flex-column align-center">
-              <img src="assets/img/mastermindLogo.png" alt="The logo of Mastermind">
+              <img
+                src="assets/img/mastermindLogo.png"
+                alt="The logo of Mastermind"
+                class="pointer"
+                onclick="describeProject('mastermind')"
+              />
               <h3>Mastermind</h3>
             </div>
             <div class="flex justify-center flex-column align-center">
-              <img src="assets/img/pinkGooseLogo.png" alt="The logo of Pink Goose">
+              <img
+                src="assets/img/pinkGooseLogo.png"
+                alt="The logo of Pink Goose"
+                class="pointer"
+                onclick="describeProject('pinkgoose')"
+              />
               <h3>Pink Goose</h3>
             </div>
             <div class="flex justify-center flex-column align-center">
-              <img src="assets/img/OvOOPLogo.png" alt="">
+              <img
+                src="assets/img/OvOOPLogo.png"
+                alt="The logo of the OVOOP project"
+                class="pointer"
+                onclick="describeProject('ovoop')"
+              />
               <h3>OvOOP</h3>
             </div>
             <div class="flex justify-center flex-column align-center">
-              <img src="assets/img/portfolioLogo.png" alt="">
+              <img
+                src="assets/img/portfolioLogo.png"
+                alt="The logo of my portfolio"
+                class="pointer"
+                onclick="describeProject('portfolio')"
+              />
               <h3>Portfolio</h3>
             </div>
-            
+          </div>
+        </div>
+        <div class="projectsinfo flex align-center flex-column">
+          <h1 id="projectsinfotitle"></h1>
+          <p id="projectsinfo"></p>
+        </div>
       </section>
-
-
     </main>
 
     <footer class="flex flex-row justify-around align-center">
@@ -94,22 +156,35 @@
         <h1>Credits</h1>
         <p>Designer: <span class="infopurple">Morris van Uden</span></p>
         <p>Developer: <span class="infopurple">Morris van Uden</span></p>
-        <p>Front end developer: <span class="infopurple">Morris van Uden</span></p>
-        <p>Back end developer: <span class="infopurple">Morris van Uden</span></p>
+        <p>
+          Front end developer: <span class="infopurple">Morris van Uden</span>
+        </p>
+        <p>
+          Back end developer: <span class="infopurple">Morris van Uden</span>
+        </p>
         <p>School: <span class="infopurple">Technovium Nijmegen</span></p>
         <p>Country: <span class="infopurple">Netherlands</span></p>
       </div>
 
       <div class="flex align-center flex-column">
         <h1>Contact</h1>
-        <p>Email: <a class="infopurple" id="contactemail"></a></p>
-        <p>Phone Number: <a href="tel:3353" class="infopurple">PLACEHOLDER</a></p>
-        <a class="button flex justify-center align-center" href="contact.html#contact">Contact Form</a>
+        <p>
+          Email:
+          <a class="infopurple reverse">ln.negemjin-cor.tneduts@0776121</a>
+        </p>
+        <p>
+          Phone Number: <a href="tel:3353" class="infopurple">PLACEHOLDER</a>
+        </p>
+        <a
+          class="button flex justify-center align-center"
+          href="contact.html#contact"
+          >Contact Form</a
+        >
       </div>
 
       <div>
         <h1>Resume</h1>
-        <a href="assets/resume/RESUME.pdf" target="_blank" >Open resume here</a>
+        <a href="assets/resume/RESUME.pdf" target="_blank">Open resume here</a>
       </div>
     </footer>
   </body>
