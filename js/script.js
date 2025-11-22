@@ -22,7 +22,7 @@ function initializePage(){
 
     let emailHTML = document.getElementById('contactemail')
 
-    emailHTML = ('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+    emailHTML.innerHTML = ('<a href="mailto:' + emailE + '">' + emailE + '</a>')
 
     console.log("Succesfully encrypted email against bots")
 
