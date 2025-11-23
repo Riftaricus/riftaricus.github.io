@@ -30,7 +30,7 @@ function checkIfOnPhone() {
 
     window.location.href = "blockedpage.html";
     console.log(
-      "Blocked phone enter, please use a computer to view this website"
+      "Blocked too small screen, please use fullscreen to view this website"
     );
   } else {
     if (window.location.pathname.endsWith("blockedpage.html")) {
