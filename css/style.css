@@ -421,3 +421,7 @@ main {
 .gap {
   gap: 50px;
 }
+
+#projectlink{
+  color: white;
+}

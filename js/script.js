@@ -105,28 +105,38 @@ function describeProject(project) {
 
   let targetedParagraphTitle = document.getElementById("projectsinfotitle");
 
+  let targetedParagraphLink = document.getElementById("projectlink");
+
   if (currentProject == "mastermind") {
     targetedParagraphTitle.innerHTML = "Mastermind";
-
+    targetedParagraphLink.href =
+      "https://github.com/Riftaricus/MastermindV2New";
+    targetedParagraphLink.innerHTML =
+      "Click here to get sent to the project's repository";
     targetedParagraph.innerHTML =
       "The Mastermind project is a project i worked on in 2025. Mastermind is a game where a random code is generated, and someone then has to guess what the code is. I programmed this in Java.";
   }
   if (currentProject == "pinkgoose") {
     targetedParagraphTitle.innerHTML = "Pink Goose";
-
+    targetedParagraphLink.href = "";
+    targetedParagraphLink.innerHTML = "";
     targetedParagraph.innerHTML =
-      "The Pink Goose website is a fictional company's website that i developed using HTML and CSS, this being one of my first time touching those languages";
+      "The Pink Goose website is a fictional company's website that i developed using HTML and CSS, this being one of my first time touching those languages. I made this for school.";
   }
   if (currentProject == "ovoop") {
     targetedParagraphTitle.innerHTML = "OVOOP";
-
+    targetedParagraphLink.href = "https://github.com/m3v64/ovOOP";
+    targetedParagraphLink.innerHTML = "Click here to get sent to the project!";
     targetedParagraph.innerHTML =
       "The OVOOP project is a large public transport program that was coded using java. This is the first time i went further. In Mastermind it was basic code, here it got much more complicated, using the google library called GSON and using OOP (Object Oriented Programming) to make a fully working system with features such as an account system, a game version of it, a display map showing what route you took, a balance system, a travelling system and so much more.";
   }
   if (currentProject == "portfolio") {
     targetedParagraphTitle.innerHTML = "Portfolio";
-
+    targetedParagraphLink.href =
+      "https://github.com/Riftaricus/riftaricus.github.io";
+    targetedParagraphLink.innerHTML =
+      "Click here to get sent to the project's repository!";
     targetedParagraph.innerHTML =
-      "This is the project you're looking at right now. My Portfolio, my life shown in a simple website. I would say you can get to know me perfectly from this website, however it'd be a lie. To get to know me, you have to meet me.";
+      "This is the project you're looking at right now. My Portfolio.";
   }
 }
