@@ -17,7 +17,7 @@
           <li><a href="#about">About Me</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div></div>
@@ -150,6 +150,35 @@
           <a id="projectlink" target="_blank"></a>
         </div>
       </section>
+      <section class="flex flex-row justify-center gap" id="contact">
+        <a href="https://github.com/Riftaricus"
+          ><div class="flex align-center flex-row contactbox justify-center">
+            <img src="assets/img/github-mark-white.png" /></div
+        ></a>
+      </section>
+      <section class="flex align-center contactform flex-column" id="contactform">
+        <h1>Contact Form</h1>
+        <form class="flex flex-column">
+          <div>
+            <p>Name *</p>
+            <input type="text" required placeholder="Name *" id="name" />
+          </div>
+          <div>
+            <p>E-Mail *</p>
+            <input type="email" required placeholder="E-Mail *" id="mail" />
+          </div>
+          <div>
+            <p>Phone Number</p>
+            <input type="tel" placeholder="Phone Number" id="number" />
+          </div>
+          <div>
+            <p>Message</p>
+            <textarea placeholder="Message" id="message"></textarea>
+          </div>
+
+          <button onclick="getContactFormData()">Submit</button>
+        </form>
+      </section>
     </main>
 
     <footer class="flex flex-row justify-around align-center">
@@ -178,7 +207,7 @@
         </p> -->
         <a
           class="button flex justify-center align-center"
-          href="contact.html#contact"
+          href="#contactform"
           >Contact Form</a
         >
       </div>
