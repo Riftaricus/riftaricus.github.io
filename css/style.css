@@ -30,8 +30,8 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
-  margin: 0 15px;
-  font-size: 2vw;
+  margin: 0 1vw;
+  font-size: 3vw;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     2px 2px 0 #000, 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
@@ -59,7 +59,6 @@ nav ul li a:active {
 
 body {
   min-height: 1000px;
-  max-width: 100%;
   background-image: radial-gradient(circle, #1f0936 0%, #000000 100%);
 }
 
@@ -121,7 +120,7 @@ main {
 
 .button {
   margin-top: 40px;
-  width: 150px;
+  width: 15vw;
   height: 25px;
   border-radius: 6px;
   outline: solid #999999;
@@ -155,7 +154,7 @@ main {
 }
 
 .mainbox h1 {
-  font-size: 10vw;
+  font-size: 5vw;
   border: 3px solid rgba(255, 255, 255, 0.08);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #000000;
@@ -192,7 +191,7 @@ main {
 }
 
 .aboutbox {
-  padding: 100px 40px;
+  padding: 0px 40px;
   height: 700px;
   width: 90%;
   border-radius: 70px;
@@ -227,9 +226,9 @@ main {
 }
 
 .educationbackgroundbox {
-  padding: 100px 40px;
+  padding: 100px 0;
   height: 550px;
-  width: 90%;
+  width: fit-content;
   background-color: #d9d9d946;
   border-radius: 70px;
   outline: solid #99999945;
@@ -241,9 +240,9 @@ main {
 }
 
 .workbackgroundbox {
-  padding: 100px 40px;
+  padding: 100px 0px;
   height: 550px;
-  width: 90%;
+  width: fit-content;
   background-color: #d9d9d946;
   border-radius: 70px;
   outline: solid #99999945;
@@ -255,9 +254,9 @@ main {
 }
 
 .workbox {
-  padding: 100px 40px;
+  padding: 100px 0;
   height: fit-content;
-  width: 90%;
+  width: fit-content;
   border-radius: 70px;
   outline: solid #999999;
   gap: 20px;
@@ -272,9 +271,9 @@ main {
 }
 
 .educationbox {
-  padding: 100px 40px;
+  padding: 100px 0;
   height: fit-content;
-  width: 90%;
+  width: fit-content;
   border-radius: 70px;
   outline: solid #999999;
   gap: 20px;
@@ -289,9 +288,9 @@ main {
 }
 
 .projectsbackgroundbox {
-  padding: 100px 40px;
+  padding: 100px 0;
   height: fit-content + 200;
-  width: 90%;
+  width: fit-content;
   background-color: #d9d9d946;
   border-radius: 70px;
   outline: solid #99999945;
@@ -304,9 +303,9 @@ main {
 }
 
 .projectsbox {
-  padding: 100px 40px;
+  padding: 100px 0;
   height: fit-content;
-  width: 90%;
+  width: fit-content;
   border-radius: 70px;
   outline: solid #999999;
   gap: 20px;
@@ -402,33 +401,32 @@ main {
   min-height: 20vw;
 }
 
-.nophonebox {
-  z-index: 1000;
-  position: fixed;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: rgb(70, 70, 70);
-}
-
-.nophonebox h1 {
-  font-size: 5vw;
-}
-
 .pointer {
   cursor: pointer;
 }
 
 .projectsinfo {
   background-color: rgb(255, 255, 255);
-  width: 90%;
+  width: fit-content;
+  max-width: 80vw;
   height: fit-content + 300px;
   border-radius: 45px;
   outline: solid #999999;
-  padding: 100px 40px;
+  padding: 100px 0;
   text-align: center;
 }
+
+#projectsinfotitle{
+  font-size: 10vw;
+}
+#projectsinfo{
+  font-size: 7vw;
+}
+
+#projectlink{
+  font-size: 7vw;
+}
+
 
 .reverse {
   direction: rtl;
