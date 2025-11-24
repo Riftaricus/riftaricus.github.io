@@ -13,31 +13,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function runLoops() {
-  checkIfOnPhone();
+  // checkIfOnPhone();
   if (document.getElementById("glitchy")) {
     glitch404();
   }
 }
-function checkIfOnPhone() {
-  const isMobile =
-    /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
-      navigator.userAgent
-    );
-  if (isMobile || window.innerWidth < 1024) {
-    if (window.location.pathname.endsWith("blockedpage.html")) {
-      return;
-    }
+// function checkIfOnPhone() {
+//   const isMobile =
+//     /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
+//       navigator.userAgent
+//     );
+//   if (isMobile || window.innerWidth < 1024) {
+//     if (window.location.pathname.endsWith("blockedpage.html")) {
+//       return;
+//     }
 
-    window.location.href = "blockedpage.html";
-    console.log(
-      "Blocked too small screen, please use fullscreen to view this website"
-    );
-  } else {
-    if (window.location.pathname.endsWith("blockedpage.html")) {
-      window.location.href = "index.html";
-    }
-  }
-}
+//     window.location.href = "blockedpage.html";
+//     console.log(
+//       "Blocked too small screen, please use fullscreen to view this website"
+//     );
+//   } else {
+//     if (window.location.pathname.endsWith("blockedpage.html")) {
+//       window.location.href = "index.html";
+//     }
+//   }
+// }
 
 function initializePage() {
   console.log("Generating age...");

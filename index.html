@@ -14,8 +14,9 @@
       <nav>
         <ul class="flex flex-row">
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
+          <li><a href="#work">Work</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -94,7 +95,19 @@
         <h1>Education</h1>
         <div class="educationbox flex align-center justify-center">
           <img
-            src="assets/img/timeline.png"
+            src="assets/img/educationtimeline.png"
+            alt="a timeline of the developer's education"
+          />
+        </div>
+      </section>
+      <section
+        class="workbackgroundbox flex align-center flex-column"
+        id="work"
+      >
+        <h1>Work</h1>
+        <div class="workbox flex align-center justify-center">
+          <img
+            src="assets/img/workTimeline.png"
             alt="a timeline of the developer's education"
           />
         </div>
@@ -161,7 +174,7 @@
         id="contactform"
       >
         <h1>Contact Form</h1>
-        <form class="flex flex-column">
+        <form class="flex flex-column align-center">
           <div>
             <p>Name *</p>
             <input type="text" required placeholder="Name *" id="name" />
@@ -170,7 +183,7 @@
             <p>E-Mail *</p>
             <input type="email" required placeholder="E-Mail *" id="mail" />
           </div>
-          <div>
+          <div class="flex justify-center flex-column">
             <p>Phone Number</p>
             <input type="tel" placeholder="Phone Number" id="number" />
           </div>
@@ -179,7 +192,8 @@
             <textarea placeholder="Message" id="message"></textarea>
           </div>
 
-          <button onclick="getContactFormData()">Submit</button>
+          <button onclick="">Submit</button>
+          <!-- Form does not work  -->
         </form>
       </section>
     </main>

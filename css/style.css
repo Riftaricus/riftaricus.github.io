@@ -12,7 +12,7 @@ header {
 header h1 {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
-  font-size: 50px;
+  font-size: 10vw;
   color: white;
   text-transform: uppercase;
 }
@@ -31,7 +31,7 @@ nav ul li a {
   text-decoration: none;
   color: white;
   margin: 0 15px;
-  font-size: 30px;
+  font-size: 2.5vw;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     2px 2px 0 #000, 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
@@ -91,7 +91,9 @@ body {
 }
 
 footer {
-  font-size: larger;
+  font-size: 2vw;
+  width: 100%;
+  height: 1vh;
 }
 
 footer div {
@@ -143,7 +145,7 @@ main {
 .mainbox {
   margin-top: 200px;
   padding: 100px 40px;
-  height: 600px;
+  height: 60vw;
   width: auto;
   background-color: #d9d9d9;
   border-radius: 70px;
@@ -152,7 +154,7 @@ main {
 }
 
 .mainbox h1 {
-  font-size: 100px;
+  font-size: 10vw;
   border: 3px solid rgba(255, 255, 255, 0.08);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #000000;
@@ -163,14 +165,14 @@ main {
 .backgroundimage {
   position: absolute;
   opacity: 0.2;
-  width: 1500px;
-  height: 650px;
+  width: 100%;
+  height: 50vw;
   border-radius: 70px;
   outline: solid #151515 20px;
 }
 
 .about-text {
-  font-size: 50px;
+  font-size: 5vw;
   align-self: flex-start;
 }
 
@@ -237,6 +239,37 @@ main {
   font-size: xx-large;
 }
 
+.workbackgroundbox {
+  padding: 100px 40px;
+  height: 550px;
+  width: 90%;
+  background-color: #d9d9d946;
+  border-radius: 70px;
+  outline: solid #99999945;
+  gap: 20px;
+  align-self: center;
+  color: white;
+  -webkit-text-stroke: 2px #000000;
+  font-size: xx-large;
+}
+
+.workbox {
+  padding: 100px 40px;
+  height: fit-content;
+  width: 90%;
+  border-radius: 70px;
+  outline: solid #999999;
+  gap: 20px;
+  align-self: center;
+  background-color: white;
+  color: black;
+  -webkit-text-stroke: 0px;
+}
+
+.workbox img {
+  width: 90%;
+}
+
 .educationbox {
   padding: 100px 40px;
   height: fit-content;
@@ -283,7 +316,11 @@ main {
 }
 
 .projectsbox img {
-  width: 100%;
+  width: 20vw;
+}
+
+.projectsbox h3 {
+  font-size: 3vw;
 }
 
 .projectsbox div div {
@@ -315,7 +352,8 @@ main {
   margin: 0px auto 200px auto;
   width: 70%;
   border-radius: 45px;
-  height: 800px;
+  height: fit-content;
+  padding-bottom: 10vh;
   background-color: #d9d9d9;
   gap: 40px;
 }
@@ -329,18 +367,19 @@ main {
 }
 
 .contactform h1 {
-  font-size: 100px;
+  font-size: 10vw;
 }
 
 .contactform p {
-  font-size: xx-large;
+  font-size: 3vw;
+  margin-bottom: 1vw;
 }
 
 .contactform input,
 .contactform textarea,
 .contactform button {
   outline: solid #000000 0.5px;
-  width: 600px;
+  width: 25vw;
   border-radius: 20px;
   border: none;
   padding: 10px;
@@ -356,10 +395,10 @@ main {
 }
 
 .contactform textarea {
-  max-width: 600px;
-  min-width: 600px;
-  max-height: 240px;
-  min-height: 60px;
+  max-width: 25vw;
+  min-width: 25vw;
+  max-height: 22vw;
+  min-height: 20vw;
 }
 
 .nophonebox {
@@ -395,7 +434,7 @@ main {
   unicode-bidi: bidi-override;
 }
 
-.contactbox{
+.contactbox {
   margin: 10px auto -200px auto;
   width: 200px;
   height: 200px;
@@ -405,20 +444,20 @@ main {
   outline: solid black;
 }
 
-.contactbox img{
+.contactbox img {
   scale: 0.5;
   transition-duration: 0.1s;
 }
 
-.contactbox:hover{
+.contactbox:hover {
   scale: 1.01;
 }
 
-.contactbox:active{
+.contactbox:active {
   scale: 0.98;
 }
 
-.contactbox form{
+.contactbox form {
   font-size: 100px;
 }
 
@@ -426,10 +465,10 @@ main {
   gap: 50px;
 }
 
-#projectlink{
+#projectlink {
   color: white;
 }
 
-.aboutbackgroundbox img{
+.aboutbackgroundbox img {
   width: 350px;
 }
