@@ -313,7 +313,7 @@ main {
 
 .contactform {
   margin: 0px auto 200px auto;
-  width: 50%;
+  width: 70%;
   border-radius: 45px;
   height: 800px;
   background-color: #d9d9d9;
@@ -322,6 +322,10 @@ main {
 
 .contactform form {
   gap: 60px;
+}
+
+.contactform form * {
+  scale: 1.1;
 }
 
 .contactform h1 {
@@ -424,4 +428,8 @@ main {
 
 #projectlink{
   color: white;
+}
+
+.aboutbackgroundbox img{
+  width: 350px;
 }
