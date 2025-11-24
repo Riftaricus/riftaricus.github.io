@@ -13,31 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function runLoops() {
-  // checkIfOnPhone();
+  console.warn("Loop succesfully running!")
   if (document.getElementById("glitchy")) {
     glitch404();
   }
 }
-// function checkIfOnPhone() {
-//   const isMobile =
-//     /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
-//       navigator.userAgent
-//     );
-//   if (isMobile || window.innerWidth < 1024) {
-//     if (window.location.pathname.endsWith("blockedpage.html")) {
-//       return;
-//     }
-
-//     window.location.href = "blockedpage.html";
-//     console.log(
-//       "Blocked too small screen, please use fullscreen to view this website"
-//     );
-//   } else {
-//     if (window.location.pathname.endsWith("blockedpage.html")) {
-//       window.location.href = "index.html";
-//     }
-//   }
-// }
 
 function initializePage() {
   console.log("Generating age...");
@@ -126,7 +106,8 @@ function describeProject(project) {
   if (currentProject == "ovoop") {
     targetedParagraphTitle.innerHTML = "OVOOP";
     targetedParagraphLink.href = "https://github.com/m3v64/ovOOP";
-    targetedParagraphLink.innerHTML = "Click here to get sent to the project's repository!";
+    targetedParagraphLink.innerHTML =
+      "Click here to get sent to the project's repository!";
     targetedParagraph.innerHTML =
       "The OVOOP project is a large public transport program that was coded using java. This is the first time i went further. In Mastermind it was basic code, here it got much more complicated, using the google library called GSON and using OOP (Object Oriented Programming) to make a fully working system with features such as an account system, a game version of it, a display map showing what route you took, a balance system, a travelling system and so much more.";
   }

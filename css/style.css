@@ -421,7 +421,9 @@ main {
   font-size: 10vw;
 }
 #projectsinfo{
-  font-size: 7vw;
+  font-size: 3vw;
+  -webkit-text-stroke: 0;
+  color: black;
 }
 
 #projectlink{
