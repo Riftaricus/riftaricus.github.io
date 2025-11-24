@@ -191,9 +191,9 @@ main {
 }
 
 .aboutbox {
-  padding: 0px 0;
+  padding: 15px;
   height: 700px;
-  width: 100%;
+  width: 100% - 15px;
   border-radius: 70px;
   outline: solid #999999;
   gap: 20px;
