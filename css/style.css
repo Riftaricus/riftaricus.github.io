@@ -144,9 +144,9 @@ main {
 
 .mainbox {
   margin-top: 200px;
-  padding: 100px 40px;
+  padding: 100px 0px;
   height: 60vw;
-  width: auto;
+  width: 100%;
   background-color: #d9d9d9;
   border-radius: 70px;
   outline: solid #999999;
@@ -172,14 +172,14 @@ main {
 }
 
 .about-text {
-  font-size: 5vw;
+  font-size: 4vw;
   align-self: flex-start;
 }
 
 .aboutbackgroundbox {
-  padding: 100px 40px;
+  padding: 100px 0px;
   height: 1400px;
-  width: 90%;
+  width: 100%;
   background-color: #d9d9d946;
   border-radius: 70px;
   outline: solid #99999945;
@@ -191,9 +191,9 @@ main {
 }
 
 .aboutbox {
-  padding: 0px 40px;
+  padding: 0px 0;
   height: 700px;
-  width: 90%;
+  width: 100%;
   border-radius: 70px;
   outline: solid #999999;
   gap: 20px;
@@ -201,6 +201,7 @@ main {
   background-color: white;
   color: black;
   -webkit-text-stroke: 0px;
+  font-size: 1vw;
 }
 
 .aboutbackgroundbox img {
@@ -228,7 +229,7 @@ main {
 .educationbackgroundbox {
   padding: 100px 0;
   height: 550px;
-  width: fit-content;
+  width: 100%;
   background-color: #d9d9d946;
   border-radius: 70px;
   outline: solid #99999945;
@@ -242,7 +243,7 @@ main {
 .workbackgroundbox {
   padding: 100px 0px;
   height: 550px;
-  width: fit-content;
+  width: 100%;
   background-color: #d9d9d946;
   border-radius: 70px;
   outline: solid #99999945;
@@ -290,7 +291,7 @@ main {
 .projectsbackgroundbox {
   padding: 100px 0;
   height: fit-content + 200;
-  width: fit-content;
+  width: 100%;
   background-color: #d9d9d946;
   border-radius: 70px;
   outline: solid #99999945;
