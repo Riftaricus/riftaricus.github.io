@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function runLoops() {
-  console.warn("Loop succesfully running!")
+  console.warn("Loop succesfully running!");
   if (document.getElementById("glitchy")) {
     glitch404();
   }
