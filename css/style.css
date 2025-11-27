@@ -92,7 +92,8 @@ body {
 
 footer {
   font-size: 1.6vw;
-  width: 100%;}
+  width: 100%;
+}
 
 footer div {
   background-color: #cccccc;
@@ -415,19 +416,18 @@ main {
   text-align: center;
 }
 
-#projectsinfotitle{
+#projectsinfotitle {
   font-size: 10vw;
 }
-#projectsinfo{
+#projectsinfo {
   font-size: 3vw;
   -webkit-text-stroke: 0;
   color: black;
 }
 
-#projectlink{
+#projectlink {
   font-size: 7vw;
 }
-
 
 .reverse {
   direction: rtl;
