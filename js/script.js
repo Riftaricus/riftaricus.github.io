@@ -57,7 +57,12 @@ function glitch404() {
 
   let style = el.style;
 
-  if (randomNumber >= 2) {
+  let randomNumberRickRoll = Math.floor(Math.random() * 100) + 1;
+
+  if (randomNumberRickRoll == 50) {
+    error = "Never gonna give you up";
+    errorCode = "Never gonna let you down";
+  } else if (randomNumber >= 2) {
     errorCode = "404";
     style.color = "black";
     style.textShadow = "";
